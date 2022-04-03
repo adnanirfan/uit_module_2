@@ -17,7 +17,10 @@ const UserDetails = () => {
     // });
     // console.log(2);
 
-    fetch("https://jsonplaceholder.typicode.com/todos/1")
+    fetch("http://localhost:4000/add-todo", {
+      method: "POST",
+      body: { name: "TDOD1" },
+    })
       .then((response) => {
         console.log("1st");
         return response.json();
